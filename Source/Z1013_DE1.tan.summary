@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.750 ns
+From           : UART_RXD
+To             : uart_loader:uart_loader_1|rs232:rs232_i0|rxd_sr[0]
+From Clock     : --
+To Clock       : CLOCK_24_0
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.808 ns
+From           : redz0mb1e:redz0mb1e_1|T80s:T80_1|MREQ_n
+To             : SRAM_CE_N
+From Clock     : CLOCK_24_0
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.978 ns
+From           : SW[9]
+To             : LEDG[5]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.155 ns
+From           : SW[1]
+To             : redz0mb1e:redz0mb1e_1|video:video_1|s_col_bg[1]
+From Clock     : --
+To Clock       : CLOCK_24_0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altpll0:altpll0_1|altpll:altpll_component|_clk2'
+Slack          : -2.812 ns
+Required Time  : 12.00 MHz ( period = 83.332 ns )
+Actual Time    : N/A
+From           : redz0mb1e:redz0mb1e_1|kyb_emu:kyb_emu_1|keyb_matrix~33
+To             : redz0mb1e:redz0mb1e_1|kyb_emu:kyb_emu_1|col_o[1]
+From Clock     : altpll0:altpll0_1|altpll:altpll_component|_clk0
+To Clock       : altpll0:altpll0_1|altpll:altpll_component|_clk2
+Failed Paths   : 32
+
+Type           : Clock Setup: 'altpll0:altpll0_1|altpll:altpll_component|_clk0'
+Slack          : -0.095 ns
+Required Time  : 60.00 MHz ( period = 16.666 ns )
+Actual Time    : 59.33 MHz ( period = 16.856 ns )
+From           : redz0mb1e:redz0mb1e_1|kyb_emu:kyb_emu_1|scancode_active_q[2]
+To             : redz0mb1e:redz0mb1e_1|kyb_emu:kyb_emu_1|keyb_matrix_ps2_do[0]
+From Clock     : altpll0:altpll0_1|altpll:altpll_component|_clk0
+To Clock       : altpll0:altpll0_1|altpll:altpll_component|_clk0
+Failed Paths   : 2
+
+Type           : Clock Setup: 'altpll0:altpll0_1|altpll:altpll_component|_clk1'
+Slack          : 19.336 ns
+Required Time  : 40.00 MHz ( period = 24.999 ns )
+Actual Time    : 176.58 MHz ( period = 5.663 ns )
+From           : redz0mb1e:redz0mb1e_1|video:video_1|vga_controller_800_60:vga_controller_800_60_1|vcounter[6]
+To             : redz0mb1e:redz0mb1e_1|video:video_1|rowInChar_cnt_q[0]
+From Clock     : altpll0:altpll0_1|altpll:altpll_component|_clk1
+To Clock       : altpll0:altpll0_1|altpll:altpll_component|_clk1
+Failed Paths   : 0
+
+Type           : Clock Hold: 'altpll0:altpll0_1|altpll:altpll_component|_clk0'
+Slack          : 0.445 ns
+Required Time  : 60.00 MHz ( period = 16.666 ns )
+Actual Time    : N/A
+From           : clock_blink:clock_blink_50m|blink_int_q
+To             : clock_blink:clock_blink_50m|blink_int_q
+From Clock     : altpll0:altpll0_1|altpll:altpll_component|_clk0
+To Clock       : altpll0:altpll0_1|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'altpll0:altpll0_1|altpll:altpll_component|_clk1'
+Slack          : 0.445 ns
+Required Time  : 40.00 MHz ( period = 24.999 ns )
+Actual Time    : N/A
+From           : clock_blink:clock_blink_videoclk|blink_int_q
+To             : clock_blink:clock_blink_videoclk|blink_int_q
+From Clock     : altpll0:altpll0_1|altpll:altpll_component|_clk1
+To Clock       : altpll0:altpll0_1|altpll:altpll_component|_clk1
+Failed Paths   : 0
+
+Type           : Clock Hold: 'altpll0:altpll0_1|altpll:altpll_component|_clk2'
+Slack          : 0.445 ns
+Required Time  : 12.00 MHz ( period = 83.332 ns )
+Actual Time    : N/A
+From           : clock_blink:clock_blink_cpuclk|blink_int_q
+To             : clock_blink:clock_blink_cpuclk|blink_int_q
+From Clock     : altpll0:altpll0_1|altpll:altpll_component|_clk2
+To Clock       : altpll0:altpll0_1|altpll:altpll_component|_clk2
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 34
+
+--------------------------------------------------------------------------------------
+
